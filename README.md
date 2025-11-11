@@ -6,6 +6,7 @@ Built using **HTML, CSS, and JavaScript**, the site reflects both technical skil
 ---
 
 ✨ Overview
+
 This portfolio serves as an interactive résumé — a digital space to explore my:
 - Technical and creative **skills** in coding, AI, and design  
 - **Projects** ranging from AI-powered applications to interactive media  
@@ -21,7 +22,7 @@ The website is designed to be cute, minimalistic, and responsive, with a smooth 
 📄 Pages
 | Page | Description |
 |------|--------------|
-| **Home (index.html)** | About me section introducing XP, my studies, and interests. Includes a profile photo and fun facts. |
+| **Home (index.html)** | About me section introducing me (Xuan Phuong), my studies, and interests. Includes a profile photo and fun facts. |
 | **Skills (skills.html)** | Showcases technical proficiency (C++, Python, HTML/CSS, etc.) and certifications like IELTS, SAT, and MOS. |
 | **Projects (projects.html)** | Displays all major projects, each with its own detailed subpage. |
 | **Achievements (achievements.html)** | Highlights awards, academic recognitions, and personal accomplishments. |
@@ -33,23 +34,41 @@ The website is designed to be cute, minimalistic, and responsive, with a smooth 
 - **Version Control:** Git & GitHub  
 
 🧭 Setup Instructions
-###🔹 1. Clone or Download
+1. Clone or Download
+
 git clone https://github.com/yourusername/xp-portfolio.git
+
 Or download the ZIP and extract it.
-###🔹 2. Open Locally
+
+2. Open Locally
+
 Simply open index.html in any web browser:
+
 start index.html
 
+---
+
 🧑‍💻 Author
+
 Nguyen Xuan Phuong (XP)
+
 📍 Yuan Ze University, Taiwan
+
 💻 Informatics | Software Development | Design
-🌐 [LinkedIn / Portfolio URL (if available)]
+
+🌐 https://github.com/not-xp
+
+---
 
 🪄 Credits
+
 Background music: Lofi Loop (royalty-free)
+
 Particle background: Custom JS animation
+
 Icons: Unicode + Emojis
+
 Built by XP
+
 
 
