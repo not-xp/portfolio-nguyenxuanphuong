@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XP's Portfolio - Project 2: Colosseum Presentation</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .project-container {
+        max-width: 900px;
+        margin: 2rem auto;
+        padding: 1rem;
+      }
+
+      .project-container h2 {
+        text-align: center;
+        margin: 1rem 1rem;
+        font-size: 2rem;
+      }
+
+      body.dark-mode h2 {
+        color: #f0e6ff;
+      }
+
+      video {
+        display: block;
+        margin: 1rem auto;
+        width: 100%;
+        max-width: 800px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      p {
+        text-align: justified;
+        font-size: 1.05rem;
+        padding: 2rem;
+        margin: -2rem auto;
+      }
+    </style>
+  </head>
+  <body class="light-mode">
+    <header>
+      <h1>My Projects</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">About Me</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="achievements.html">Achievements</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="toggle-theme" class="btn">🌙</button>
+    </header>
+
+    <section class="project-container">
+      <h2>🎬 Colosseum Presentation</h2>
+      <p>
+        A solo project for my European History class, this PowerPoint
+        presentation on the Colosseum was my first university presentation. I
+        designed and created every slide myself, combining dynamic animations,
+        visually engaging layouts, and techno-inspired effects. This project
+        showcases my PowerPoint design skills, creativity, and ability to
+        communicate complex information clearly, all while crafting a
+        presentation that's both educational and visually striking.
+      </p>
+
+      <video controls autoplay loop muted>
+        <source src="images/project-2-colosseum.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <footer>
+      <p>Made by XP © 2025</p>
+      <audio id="lofi-player" loop autoplay>
+        <source src="music/lofi-loop.mp3" type="audio/mpeg" />
+      </audio>
+    </footer>
+
+    <canvas id="particles"></canvas>
+    <script src="js/main.js"></script>
+  </body>
+</html>

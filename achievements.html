@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XP's Portfolio - Achievements</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>My Achievements</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">About Me</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="achievements.html" class="active">Achievements</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="toggle-theme" class="btn">🌙</button>
+    </header>
+
+    <section id="achievements">
+  <h2>Achievements</h2>
+  <div class="achievement-note">Click on an achievement to view certificate</div>
+
+  <div class="achievements-container">
+    <div class="achievement-card" data-certificate="images/robotics-cert.jpg">
+      <div class="achievement-prize">🤖 Vietnam Open Robotics Challenge</div>
+      <div class="achievement-title">🏆 Top 16</div>
+      <div class="achievement-info">
+        Demonstrated teamwork, engineering, and creative problem-solving skills in robotics design and automation.
+      </div>
+    </div>
+
+    <div class="achievement-card" data-certificate="images/english-cert.jpg">
+      <div class="achievement-prize">📖 Vietnam National Excellent Student Competition</div>
+      <div class="achievement-title">🏅 Consolation Prize in English</div>
+      <div class="achievement-info">
+        Recognized for strong language proficiency and analytical writing skills in a nationwide competition.
+      </div>
+    </div>
+
+    <div class="achievement-card" data-certificate="images/informatics-cert.jpg">
+      <div class="achievement-prize">💻 Central Highlands Informatics Olympiad</div>
+      <div class="achievement-title">🥈 Second Prize</div>
+      <div class="achievement-info">
+        Awarded for algorithmic programming excellence and logical reasoning in regional competition.
+      </div>
+    </div>
+
+    <div class="achievement-card" data-certificate="images/mos-cert.jpg">
+      <div class="achievement-prize">🪟 Microsoft Office Specialist World Championship</div>
+      <div class="achievement-title">🥈 Second Prize - Regional</div>
+      <div class="achievement-info">
+        Proficiency in Microsoft productivity tools, accuracy, and speed under time constraints.
+      </div>
+    </div>
+
+    <div class="achievement-card" data-certificate="images/icpc-cert.jpg">
+      <div class="achievement-prize">💻 ICPC Vietnam Northern Provincial Contest</div>
+      <div class="achievement-title">🏅 Honorable Mention</div>
+      <div class="achievement-info">
+        Participated in team-based algorithmic programming contest, enhancing collaboration and efficiency under pressure.
+      </div>
+    </div>
+
+    <div class="achievement-card" data-certificate="images/chess-cert.jpg">
+      <div class="achievement-prize">♟️ Lam Dong Province Student Chess Award</div>
+      <div class="achievement-title">🥈 Silver Medal - Blitz Chess</div>
+      <div class="achievement-info">
+        Reflected strategic thinking and decision-making skills under limited time.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Certificate Modal -->
+<div id="certificate-modal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="certificate-image" alt="Certificate">
+</div>
+
+
+    <!-- Modal for Certificate -->
+    <div id="certificate-modal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="certificate-image" alt="Certificate" />
+    </div>
+
+    <!-- Certificate Modal -->
+    <div id="certificate-modal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="certificate-image" />
+    </div>
+
+    <footer>
+      <p>Made by XP © 2025</p>
+      <audio id="lofi-player" loop autoplay>
+        <source src="music/lofi-loop.mp3" type="audio/mpeg" />
+      </audio>
+    </footer>
+
+    <canvas id="particles"></canvas>
+    <script src="js/main.js"></script>
+  </body>
+</html>

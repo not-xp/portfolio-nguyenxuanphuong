@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XP's Portfolio - Contact</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="light-mode">
+    <header>
+      <h1>Contact Me</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">About Me</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="achievements.html">Achievements</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="toggle-theme" class="btn">🌙</button>
+    </header>
+
+    <section id="contact">
+      <h2>Let's Connect!</h2>
+      <p class="contact-intro">
+        Feel free to reach out for collaborations, projects, or just to say hi
+        🌸
+      </p>
+
+      <div class="contact-cards">
+        <a href="mailto:nxphuong.uni@gmail.com" class="contact-card">
+          <i class="fas fa-envelope"></i>
+          <div class="contact-info">
+            <h3>Personal Email</h3>
+            <p>nxphuong.uni@gmail.com</p>
+          </div>
+        </a>
+
+        <a href="mailto:s1143540@mail.yzu.edu.tw" class="contact-card">
+          <i class="fas fa-school"></i>
+          <div class="contact-info">
+            <h3>University Email</h3>
+            <p>s1143540@mail.yzu.edu.tw</p>
+          </div>
+        </a>
+
+        <a
+          href="https://github.com/not-xp"
+          target="_blank"
+          class="contact-card"
+        >
+          <i class="fab fa-github"></i>
+          <div class="contact-info">
+            <h3>GitHub</h3>
+            <p>@not-xp</p>
+          </div>
+        </a>
+
+        <div class="contact-card">
+          <i class="fas fa-id-card"></i>
+          <div class="contact-info">
+            <h3>Student ID</h3>
+            <p id="student-id">1143540</p>
+          </div>
+          <button
+            class="copy-btn"
+            onclick="copyToClipboard('student-id')"
+            title="Copy Student ID"
+          >
+            <i class="fas fa-copy"></i>
+          </button>
+        </div>
+
+        <div class="contact-card">
+          <i class="fab fa-line"></i>
+          <div class="contact-info">
+            <h3>LINE</h3>
+            <p id="line-number">0911177892</p>
+          </div>
+          <button
+            class="copy-btn"
+            onclick="copyToClipboard('line-number')"
+            title="Copy LINE Number"
+          >
+            <i class="fas fa-copy"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Made by XP © 2025</p>
+      <audio id="lofi-player" loop autoplay>
+        <source src="music/lofi-loop.mp3" type="audio/mpeg" />
+      </audio>
+    </footer>
+
+    <canvas id="particles"></canvas>
+    <script src="js/main.js"></script>
+
+    <script>
+      function copyToClipboard(elementId) {
+        const text = document.getElementById(elementId).innerText;
+        navigator.clipboard
+          .writeText(text)
+          .then(() => {
+            alert(text + " copied to clipboard!");
+          })
+          .catch((err) => {
+            console.error("Failed to copy: ", err);
+          });
+      }
+    </script>
+  </body>
+</html>

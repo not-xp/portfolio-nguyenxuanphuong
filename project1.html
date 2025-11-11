@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XP's Portfolio - Finding Local Foods of Central Vietnam</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .project-container h2 {
+        text-align: center; /* centers the title */
+        margin: -0.5rem 0; /* reduces top and bottom spacing */
+        font-size: 1.8rem; /* optional: adjust size if needed */
+      }
+
+      body.dark-mode h2 {
+        color: #f0e6ff;
+      }
+
+      /* Project-specific styling */
+      .project-container {
+        max-width: 900px;
+        margin: 2rem auto;
+        padding: 2rem;
+      }
+
+      .project-images {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6rem;
+      }
+
+      .project-images img {
+        flex: 1 1 45%; /* each image takes ~45% of the row, adjusts for screen */
+        max-width: 400px;
+        aspect-ratio: 16 / 9; /* forces same ratio for all images */
+        object-fit: cover; /* crops or scales image to fit nicely */
+        border-radius: 10px;
+        transition: transform 0.5s ease, box-shadow 0.5s ease;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Certificate image stays full width */
+      .project-images img:last-child {
+        flex: 1 1 100%;
+        aspect-ratio: auto;
+        object-fit: contain;
+      }
+
+      .project-images img:hover {
+        transform: scale(2); /* zoom in slightly */
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* bigger shadow on hover */
+      }
+
+      @media (max-width: 600px) {
+        .project-images img {
+          flex: 1 1 100%; /* stack images on small screens */
+        }
+      }
+    </style>
+  </head>
+  <body class="light-mode">
+    <header>
+      <h1>My Projects</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">About Me</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="achievements.html">Achievements</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="toggle-theme" class="btn">🌙</button>
+    </header>
+
+    <section class="project-container">
+      <h2>💻 Finding Local Foods of Central Vietnam</h2>
+      <p>
+        A website my team and I built during SEAS (Summer of Engineering and
+        Applied Sciences) to recognize local Central Vietnam foods. It uses a
+        CLIP AI model trained on images and a Gradio web interface. I was
+        the main coder, handling both AI training and UI/UX design using Python,
+        HTML, and CSS. Through this project, I learned how to train AI models,
+        build user-friendly web apps, and integrate machine learning into
+        practical applications.<br /><span style="font-size: 0.8em; color: #666"
+          >Note: My team hasn't decided to make the final website public yet, so
+          there's no live link available at the moment - sorry!</span
+        >
+      </p>
+
+      <div class="project-images">
+        <img
+          src="images/project-1-cert.jpg"
+          alt="Project Webpage Screenshot 1"
+        />
+        <img
+          src="images/project-1-web.jpg"
+          alt="Project Webpage Screenshot 2"
+        />
+      </div>
+    </section>
+
+    <footer>
+      <p>Made by XP © 2025</p>
+      <audio id="lofi-player" loop autoplay>
+        <source src="music/lofi-loop.mp3" type="audio/mpeg" />
+      </audio>
+    </footer>
+
+    <canvas id="particles"></canvas>
+    <script src="js/main.js"></script>
+  </body>
+</html>
