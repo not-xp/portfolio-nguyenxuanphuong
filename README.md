@@ -33,10 +33,10 @@ The website is designed to be cute, minimalistic, and responsive, with a smooth 
 - **Version Control:** Git & GitHub  
 
 🧭 Setup Instructions
-🔹 1. Clone or Download
+###🔹 1. Clone or Download
 git clone https://github.com/yourusername/xp-portfolio.git
 Or download the ZIP and extract it.
-🔹 2. Open Locally
+###🔹 2. Open Locally
 Simply open index.html in any web browser:
 start index.html
 
@@ -51,4 +51,5 @@ Background music: Lofi Loop (royalty-free)
 Particle background: Custom JS animation
 Icons: Unicode + Emojis
 Built by XP
+
 
